@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngx-rich-editor',
-  template: `
-    <p>
-      ngx-rich-editor works!
-    </p>
-  `,
-  styles: []
+  templateUrl: './ngx-rich-editor.component.html',
+  styleUrls: ['./ngx-rich-editor.component.css']
 })
 export class NgxRichEditorComponent implements OnInit {
 
