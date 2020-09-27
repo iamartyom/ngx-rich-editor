@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { NgxRichEditorModule } from 'projects/ngx-rich-editor/src/public-api';
+import { NgxRichEditorModule } from 'ngx-rich-editor';
 
 @NgModule({
   declarations: [
@@ -9,7 +9,7 @@ import { NgxRichEditorModule } from 'projects/ngx-rich-editor/src/public-api';
   ],
   imports: [
     BrowserModule,
-    NgxRichEditorModule
+    NgxRichEditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
