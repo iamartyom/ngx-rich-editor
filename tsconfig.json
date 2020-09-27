@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-rich-editor": [
+        "dist/ngx-rich-editor"
+      ],
+      "ngx-rich-editor/*": [
+        "dist/ngx-rich-editor/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
