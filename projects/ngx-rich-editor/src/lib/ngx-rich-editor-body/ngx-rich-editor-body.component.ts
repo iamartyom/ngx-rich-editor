@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgxRichEditorBodyComponent implements OnInit {
 
+  data: string = "<b>test</b> <u>text</u>";
+
   constructor() { }
 
   ngOnInit() {
