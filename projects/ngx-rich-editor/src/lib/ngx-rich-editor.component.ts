@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-rich-editor',
+  selector: 'ngx-rich-editor',
   template: `
     <p>
       ngx-rich-editor works!
