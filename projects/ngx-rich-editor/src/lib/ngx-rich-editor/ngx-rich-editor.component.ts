@@ -17,12 +17,14 @@ export class NgxRichEditorComponent implements ControlValueAccessor {
   data: string;
   disabled: boolean;
 
+  onChange: (value: string) => { }
+
   writeValue(obj: any): void {
-   this.data = obj;  
+   this.data = obj;
   }
 
   registerOnChange(fn: any) {
-
+    this.onChange = fn;
   }
 
   registerOnTouched(fn: any) {

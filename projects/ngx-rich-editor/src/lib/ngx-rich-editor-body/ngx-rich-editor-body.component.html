@@ -1,1 +1,1 @@
-<div contenteditable="true" [innerHTML]="data"></div>
+<div contenteditable="true" [innerHTML]="data" (input)="onChange($event.target.innerHTML)"></div>

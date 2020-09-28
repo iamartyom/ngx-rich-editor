@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'ngx-rich-editor-body',
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class NgxRichEditorBodyComponent {
   @Input() data: string;
+  @Output() change = new EventEmitter<string>();
+
+  onChange(value: string): void {
+    this.data = value;
+    this.change.emit(this.data);
+  }
 }
