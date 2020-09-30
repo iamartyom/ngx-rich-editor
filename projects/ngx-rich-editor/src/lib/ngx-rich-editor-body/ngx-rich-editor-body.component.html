@@ -1,1 +1,5 @@
-<div contenteditable="true" [innerHTML]="data" (input)="onChange($event.target.innerHTML)"></div>
+<div
+    [contentEditable]="!disabled"
+    [innerHTML]="data"
+    (input)="onChange($event.target.innerHTML)">
+</div>

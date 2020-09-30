@@ -7,6 +7,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class NgxRichEditorBodyComponent {
   @Input() data: string;
+  @Input() disabled: boolean;
+
   @Output() change = new EventEmitter<string>();
 
   onChange(value: string): void {
